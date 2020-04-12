@@ -14,17 +14,18 @@ import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
+import com.trianing.waits.WaitTypes;
 
 public class LoginTests {
 
 	private WebDriver driver;
 	private String baseUrl;
 	private LoginPOM loginPOM;
-	private static Properties properties;
+	private Properties properties;
 	private ScreenShot screenShot;
 
 	@BeforeClass
-	public static void setUpBeforeClass() throws IOException {
+	public  void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
@@ -47,9 +48,15 @@ public class LoginTests {
 	}
 	@Test
 	public void validLoginTest() {
-		loginPOM.sendUserName("admin");
+	/*	loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
-		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		loginPOM.clickLoginBtn(); */
+	loginPOM.LoginUser("admin","admin@123");
+		
+	
 	}
+	
+	
+		
+	
 }

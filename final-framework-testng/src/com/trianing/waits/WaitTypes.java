@@ -1,5 +1,7 @@
 package com.trianing.waits;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,8 +26,8 @@ public class WaitTypes {
 	
 	// we will have methods which returns the WebElement 
 	// on demand of explicit wait 
-	
-	
+
+
 	// this method will return WebElement 
 	// when on the page it is available for presence
 	// presenceOfElementLocated
