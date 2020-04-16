@@ -35,7 +35,7 @@ private WebDriver driver;
 	@FindBy(id="customer")
 	private WebElement customer; 
 	
-	@FindBy(xpath="//*[@id='customer']/a/i")
+	@FindBy(xpath="//*[@id='customer']/ul/li[1]/a")
 	private WebElement customerClick;
 	
 	@FindBy(id="input-name")
@@ -120,9 +120,9 @@ private WebDriver driver;
 					try {
 						
 						customer();
-						Thread.sleep(3000);
+						Thread.sleep(1000);
 						customerClick();
-						Thread.sleep(3000);
+						Thread.sleep(1000);
 						inputName();
 						Thread.sleep(3000);
 						buttonFilter();

@@ -73,11 +73,11 @@ public class UNFTests021 {
 		}
 	Boolean flag2 = UNFPOM021.CustomerDelete();	
 	if(flag2){
-		System.out.println("LogIn Successful");
+		System.out.println("UNFPOM021 Successful");
 	}
 	else
 	{
-		System.out.println("LogIn Unsuccessful");
+		System.out.println("UNFPOM021 Unsuccessful");
 	}
 	}
 	
